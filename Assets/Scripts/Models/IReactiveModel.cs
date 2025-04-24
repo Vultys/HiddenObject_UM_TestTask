@@ -1,6 +1,6 @@
 using UniRx;
 
-public interface IModel
+public interface IReactiveModel
 {
     public string Id { get; }
     public ReactiveProperty<bool> IsFound { get; }
