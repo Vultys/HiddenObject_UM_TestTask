@@ -1,0 +1,186 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: HiddenObjects
+  m_EditorClassIdentifier: 
+  m_GroupName: HiddenObjects
+  m_GUID: eacbbf1e1b2cb044180b4681b326fc08
+  m_SerializeEntries:
+  - m_GUID: 0196f655844ee9c498cf7459ac4bb402
+    m_Address: Assets/Adressables/HiddenObjects/12_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 06071abc89a24dd4aba909c5bdf3ccc2
+    m_Address: Assets/Adressables/HiddenObjects/17_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 07351a234a703634eb5c6bd9b87eeae9
+    m_Address: Assets/Adressables/HiddenObjects/6_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 08900abf95ed24f4c841ee180af49ea3
+    m_Address: Assets/Adressables/HiddenObjects/2_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1128fb70eb1ca0d4eba5ba756d2f97c4
+    m_Address: Assets/Adressables/HiddenObjects/29_3_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1b73db15b62439f4fa631ccef01e5312
+    m_Address: Assets/Adressables/HiddenObjects/19_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1e481b79fa2de624190ae06ff2c783b6
+    m_Address: Assets/Adressables/HiddenObjects/35_2_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 203a33449dd0e5241906e666b9d28e0a
+    m_Address: Assets/Adressables/HiddenObjects/15_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2053605142d335441845608dc1d79650
+    m_Address: Assets/Adressables/HiddenObjects/29_1_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 250af02bee1d93f42bcad567a84eb8d9
+    m_Address: Assets/Adressables/HiddenObjects/33_1_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2af040e0ec1a8894dac62a91f6eaa1c4
+    m_Address: Assets/Adressables/HiddenObjects/29_4_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d578bec633fc644ab5afe8c9cb0b2ee
+    m_Address: Assets/Adressables/HiddenObjects/5_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 36aac1773c8b0684abdba351c0f47e8a
+    m_Address: Assets/Adressables/HiddenObjects/44_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b47f5e1cdc72384eac8ba60b95208e2
+    m_Address: Assets/Adressables/HiddenObjects/42_3_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 446d677ccfa8b8142b849c2b58a5f82d
+    m_Address: Assets/Adressables/HiddenObjects/39_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5431f3a28f780dd4d90b5f0b16fc0534
+    m_Address: Assets/Adressables/HiddenObjects/42_2_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 653e3d7d38bea2944819c0a64c7a9c4e
+    m_Address: Assets/Adressables/HiddenObjects/35_3_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7da37233a794eb44597edd7725dae36c
+    m_Address: Assets/Adressables/HiddenObjects/33_2_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7fb87f60bac8c0941aa999aec3c204af
+    m_Address: Assets/Adressables/HiddenObjects/26_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7fccf90a9fd674743a34fb8680cf2c8d
+    m_Address: Assets/Adressables/HiddenObjects/34_3_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 85167f2e4dc3f9c499addc3fac7f6b7b
+    m_Address: Assets/Adressables/HiddenObjects/47_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 898771aaa5cd5bd4eb19054e88649101
+    m_Address: Assets/Adressables/HiddenObjects/31_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 91bafc8e73cfcd64fb15dc8e85425bc2
+    m_Address: Assets/Adressables/HiddenObjects/42_1_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9d106babb2abf4446831032cc6036918
+    m_Address: Assets/Adressables/HiddenObjects/38_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b3816f297d2a74843b55a5938a692eba
+    m_Address: Assets/Adressables/HiddenObjects/34_1_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c11a4227093c031498133d54adaa191d
+    m_Address: Assets/Adressables/HiddenObjects/48_1_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c36208695b1286c45b0dc6fa62dc0ca4
+    m_Address: Assets/Adressables/HiddenObjects/10_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c523164c372ebe9449dab2e6be115901
+    m_Address: Assets/Adressables/HiddenObjects/32_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c61cdf5d307803f4fae1862fc0796467
+    m_Address: Assets/Adressables/HiddenObjects/46 _fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d740dd68a8b28344baecbf7480b00a7a
+    m_Address: Assets/Adressables/HiddenObjects/29_2_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: df962a7b62d0d994da59294886d34d65
+    m_Address: Assets/Adressables/HiddenObjects/3_2_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e8f24fdd35fd44042bb5ffb72526b8b8
+    m_Address: Assets/Adressables/HiddenObjects/23_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fb0fdfb4482d446409159dba98afc7c7
+    m_Address: Assets/Adressables/HiddenObjects/34_2_fix.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: be0eae4dcf3c69e4194528cb493ba579, type: 2}
+  m_SchemaSet:
+    m_Schemas: []
