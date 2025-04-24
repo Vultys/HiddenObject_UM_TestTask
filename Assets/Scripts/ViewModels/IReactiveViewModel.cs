@@ -1,4 +1,4 @@
-public interface IReactiveViewModel<out TModel> where TModel : IReactiveModel
+public interface IReactiveViewModel<out TModel> where TModel : IModel
 {
     public TModel Model { get; }
 }

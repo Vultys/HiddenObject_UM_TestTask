@@ -1,6 +1,6 @@
 using UniRx;
 
-public class HiddenObjectModel : IReactiveModel
+public class HiddenObjectModel : IModel
 {
     public string Id { get; private set; }
     public string DisplayName { get; private set; }
