@@ -569,7 +569,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 346.6, y: 150}
+  m_CellSize: {x: 345.5, y: 150}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 2
   m_ConstraintCount: 4
@@ -869,7 +869,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _parent: {fileID: 2108428591}
+  _displayNamesParent: {fileID: 1084077035}
   _hiddenObjectPrefab: {fileID: 5877154328869179983, guid: ac878053747646b45b59d2de57973fdc, type: 3}
+  _displayNamePrefab: {fileID: 7677736788016481996, guid: 4449cf374c06adb40b247b83f66f3d5f, type: 3}
 --- !u!4 &1990087149
 Transform:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using Zenject;
 
@@ -5,9 +6,14 @@ public class HiddenObjectRenderer : MonoBehaviour
 {
     [SerializeField] private Transform _parent;
 
+    [SerializeField] private Transform _displayNamesParent;
+
     [SerializeField] private HiddenObjectView _hiddenObjectPrefab;
 
+    [SerializeField] private TextMeshProUGUI _displayNamePrefab;
+
     private DiContainer _diContainer;
+    
     private GameViewModel _gameViewModel;
 
     [Inject]
@@ -27,7 +33,8 @@ public class HiddenObjectRenderer : MonoBehaviour
         foreach(var viewModel in _gameViewModel.HiddenObjects)
         {
             var view = _diContainer.InstantiatePrefabForComponent<HiddenObjectView>(_hiddenObjectPrefab, _parent);
-            view.Init(viewModel);
+            var displayName = _diContainer.InstantiatePrefabForComponent<TextMeshProUGUI>(_displayNamePrefab, _displayNamesParent);
+            view.Init(viewModel, displayName);
         }
     }
 }

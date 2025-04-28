@@ -1,5 +1,6 @@
 using System.Collections;
 using DG.Tweening;
+using TMPro;
 using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,6 +16,8 @@ public class HiddenObjectView : MonoBehaviour, IView<HiddenObjectViewModel>
     [SerializeField] private Outline _foundHighlight;
 
     private RectTransform _rectTransform;
+
+    private TextMeshProUGUI _displayName;
 
     private void Awake()
     {
@@ -32,6 +35,13 @@ public class HiddenObjectView : MonoBehaviour, IView<HiddenObjectViewModel>
             .AddTo(_disposables);
     }
 
+    public void Init(HiddenObjectViewModel viewModel, TextMeshProUGUI displayName)
+    {
+        Init(viewModel);
+        _displayName = displayName;
+        _displayName.text = viewModel.Model.DisplayName;
+    }
+
     private IEnumerator HighlightAnimation()
     {
         Sequence sequence = DOTween.Sequence();
@@ -47,10 +57,12 @@ public class HiddenObjectView : MonoBehaviour, IView<HiddenObjectViewModel>
         if(_foundHighlight != null)
         {
             _foundHighlight.enabled = isFound;
-            if(isFound)
-            {
-                StartCoroutine(HighlightAnimation());
-            }
+        }
+
+        if(isFound)
+        {
+            _displayName.fontStyle = FontStyles.Strikethrough;
+           StartCoroutine(HighlightAnimation());
         }
     }
 
