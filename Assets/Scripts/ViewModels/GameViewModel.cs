@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UniRx;
+using Zenject;
 
 public class GameViewModel : IReactiveViewModel<GameModel>, IDisposable
 {
@@ -13,18 +14,18 @@ public class GameViewModel : IReactiveViewModel<GameModel>, IDisposable
     private List<HiddenObjectViewModel> _viewModels = new();
     public IReadOnlyList<HiddenObjectViewModel> HiddenObjects => _viewModels;
 
+    private readonly ReactiveProperty<int> _foundCount = new(0);
     public IReadOnlyReactiveProperty<int> FoundCount => _foundCount;
 
-    private readonly ReactiveProperty<int> _foundCount = new(0);
-
-    public void Init(GameModel model)
+    [Inject]
+    public void Construct(GameModel model)
     {
-        _viewModels = Model.HiddenObjects.Select(model =>
+        _viewModels = model.HiddenObjects.Select(model =>
         {
             var vm = new HiddenObjectViewModel(model);
             vm.IsFound
                 .Where(found => found)
-                .Subscribe(_ => _foundCount.Value++)
+                .Subscribe(OnFound)
                 .AddTo(_disposables);
             return vm;
         }).ToList();
@@ -40,6 +41,11 @@ public class GameViewModel : IReactiveViewModel<GameModel>, IDisposable
     public void CompleteGame()
     {
         State.Value = GameState.Completed;
+    }
+
+    private void OnFound(bool isFound)
+    {
+        _foundCount.Value++;
     }
 
     private CompositeDisposable _disposables = new();
