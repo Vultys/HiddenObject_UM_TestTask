@@ -17,8 +17,10 @@ public class GameViewModel : IReactiveViewModel<GameModel>, IDisposable
     private readonly ReactiveProperty<int> _foundCount = new(0);
     public IReadOnlyReactiveProperty<int> FoundCount => _foundCount;
 
+    private HiddenObjectSpawner _hiddenObjectSpawner;
+
     [Inject]
-    public void Construct(GameModel model)
+    public void Construct(GameModel model, HiddenObjectSpawner hiddenObjectSpawner)
     {
         _viewModels = model.HiddenObjects.Select(model =>
         {
@@ -30,6 +32,8 @@ public class GameViewModel : IReactiveViewModel<GameModel>, IDisposable
             return vm;
         }).ToList();
 
+        _hiddenObjectSpawner = hiddenObjectSpawner;
+        _hiddenObjectSpawner.SpawnAll();
         State.Value = GameState.Playing;
     }
 

@@ -848,30 +848,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1990087149}
-  - component: {fileID: 1990087148}
+  - component: {fileID: 1990087150}
   m_Layer: 0
-  m_Name: HiddenObjectRenderer
+  m_Name: HiddenObjectSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1990087148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1990087147}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1282663b76c64e64384b1e789e972612, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _parent: {fileID: 2108428591}
-  _displayNamesParent: {fileID: 1084077035}
-  _hiddenObjectPrefab: {fileID: 5877154328869179983, guid: ac878053747646b45b59d2de57973fdc, type: 3}
-  _displayNamePrefab: {fileID: 7677736788016481996, guid: 4449cf374c06adb40b247b83f66f3d5f, type: 3}
 --- !u!4 &1990087149
 Transform:
   m_ObjectHideFlags: 0
@@ -887,6 +871,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1990087150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990087147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d5888da5ef1d3e46bf133fc6d007001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawnArea: {fileID: 2108428591}
+  _hiddenObjectPrefab: {fileID: 4353786753572437651, guid: ac878053747646b45b59d2de57973fdc, type: 3}
+  _minDistance: 50
+  _maxAttempts: 100
+  _hiddenObjectNamePrefab: {fileID: 7677736788016481996, guid: 4449cf374c06adb40b247b83f66f3d5f, type: 3}
+  _hiddenObjectNameParent: {fileID: 1084077035}
 --- !u!1 &2073722480
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,10 +1070,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556c584f083bb82438326a3adda04086, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hiddenObjectScriptables:
-  - {fileID: 11400000, guid: 6817eb63db10c8f4a9e1cdfc7f8ff62b, type: 2}
-  - {fileID: 11400000, guid: 6bd062fa4cdb2dd4c8fec8ff6bb67d77, type: 2}
-  _hiddenObjectRenderer: {fileID: 1990087148}
+  _hiddenObjectScriptables: []
+  _hiddenObjectSpawner: {fileID: 1990087150}
+  _hiddenObjectPrefab: {fileID: 5877154328869179983, guid: ac878053747646b45b59d2de57973fdc, type: 3}
+  _hiddenObjectsParent: {fileID: 2108428591}
 --- !u!1 &2108428590
 GameObject:
   m_ObjectHideFlags: 0

@@ -35,11 +35,15 @@ public class HiddenObjectView : MonoBehaviour, IView<HiddenObjectViewModel>
             .AddTo(_disposables);
     }
 
-    public void Init(HiddenObjectViewModel viewModel, TextMeshProUGUI displayName)
+    public void InitText(TextMeshProUGUI displayName)
     {
-        Init(viewModel);
         _displayName = displayName;
-        _displayName.text = viewModel.Model.DisplayName;
+        _displayName.text = _viewModel.Model.DisplayName;
+    }
+
+    public void DespawnText()
+    {
+        Destroy(_displayName.gameObject);
     }
 
     private IEnumerator HighlightAnimation()
