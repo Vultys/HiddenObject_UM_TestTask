@@ -19,4 +19,9 @@ public class HiddenObjectModel : IModel
     {
         IsFound.Value = true;
     }
+
+    public void Reset()
+    {
+        IsFound.Value = false;
+    }
 }

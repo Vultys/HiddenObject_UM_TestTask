@@ -1,24 +1,21 @@
-
-using System.Collections;
 using UniRx;
-using UnityEngine;
-using UnityEngine.AddressableAssets;
-using UnityEngine.ResourceManagement.AsyncOperations;
-using UnityEngine.UI;
 
 public class HiddenObjectViewModel : IReactiveViewModel<HiddenObjectModel>
 {
     public HiddenObjectModel Model { get; }
-
     public IReadOnlyReactiveProperty<bool> IsFound => Model.IsFound;
 
-    private AsyncOperationHandle<Sprite> _spriteHandle;
+    public ReactiveCommand HighlightCommand { get; } = new();
+    public ReactiveCommand RevealCommand { get; } = new();
 
     public HiddenObjectViewModel(HiddenObjectModel model)
     {
         Model = model;
     }
 
+    /// <summary>
+    /// Marks the object as found
+    /// </summary>
     public void MarkAsFound()
     {
         if(!Model.IsFound.Value)
@@ -27,14 +24,11 @@ public class HiddenObjectViewModel : IReactiveViewModel<HiddenObjectModel>
         }
     }
 
-    public IEnumerator InitView(Image image)
+    /// <summary>
+    /// Resets the object to not found
+    /// </summary>
+    public void Reset()
     {
-        _spriteHandle = Addressables.LoadAssetAsync<Sprite>(Model.AssetAdress);
-        yield return _spriteHandle;
-
-        if(_spriteHandle.Status == AsyncOperationStatus.Succeeded)
-        {
-            image.sprite = _spriteHandle.Result;
-        }
+        Model.Reset();
     }
 }
